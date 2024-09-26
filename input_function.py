@@ -3,6 +3,7 @@ auteur : jean TROUSSIER
 date : 26 sept 2024
 objectif : ici seront coder toutes les fonction liée a la sasie des informations et du traitements des erreurs li a ceux-ci
 """
+list_char_caractere = ['\'',"ß" ,"·", "’", "“", "”", "«", "»", "•", "–", "—", "±", "×", "÷", "²", "³", "€", "†", "‡",',',';']
 
 def liste_phrase_spliter(string_phrase_input):
     """
@@ -13,7 +14,8 @@ def liste_phrase_spliter(string_phrase_input):
     string_mot = ""
     for lettre_char in string_phrase_input:
         if lettre_char != " ":
-            string_mot += lettre_char 
+            if lettre_char not in list_char_caractere:
+                string_mot += lettre_char 
         else :
             if string_mot != "":
                 liste_string_input.append(string_mot)
