@@ -7,6 +7,11 @@ import input_function as ifu
 import computing_function as cf
 
 def bool_test_algo(string_phrase):
+    """
+    input : string
+    output : bool
+    ce programme teste une string avec l'automate
+    """
     list_string_saise = ifu.liste_phrase_spliter(string_phrase)
     if ifu.bool_phrase_vide(list_string_saise) == True:
         print("erreur, votre phrase est fausse")
