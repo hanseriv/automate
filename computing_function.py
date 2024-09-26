@@ -2,7 +2,7 @@
 auteur : jean TROUSSIER
 date : 26 sept 2024
 objectif : ici seront coder toutes les fonctions prenant lié au traitement des donnée saisie et vérifié
-To Do : fonction pour ajouter des mots au dictionnaire
+To Do : fonction pour ajouter des mots au dictionnaire soi par l'impulsion de l'utilisateur soit en le cherchant sur une bas de donnée plus grande
 """
 mat_int_etat = [[1,8,8,8,4,8], #table de transition de l'automate
                 [8,1,2,8,8,8],
