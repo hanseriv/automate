@@ -2,9 +2,11 @@
 auteur : jean TROUSSIER
 date : 26 sept 2024
 objectif : ici seront coder toutes les fonctions prenant lié au traitement des donnée saisie et vérifié
+To Do : fonction pour ajouter des mots au dictionnaire
 """
 mat_int_etat = [[1,8,8,8,4,8],[8,1,3,8,8,8],[8,2,8,3,8,8],[5,8,8,8,7,9],[8,8,8,3,8,8],[8,5,6,8,8,8],[8,6,8,8,8,9],[8,8,8,8,8,9]]
-adj
+dico_de_string = {"le" : 0, "la" : 0, "chat" : 2, "souris" : 2, "martin" : 4, "mange" : 3, "la" : 0, "petite" : 1, "joli" : 1, "grosse" : 1, "bleu" : 1, "verte" : 1, "dort" : 3,"julie" : 4, "jean" : 4, "." : 5}
+list_char_caractere = ['\'',"ß" ,"·", "’", "“", "”", "«", "»", "•", "–", "—", "±", "×", "÷", "²", "³", "€", "†", "‡",]
 
 
 
@@ -14,6 +16,15 @@ def int_list_nombre_associé(list_string):
     output : list_int
     fonction qui retourne une liste de int contenant les valeur associer aux nature de chaque mot de la liste de mot
     """
+    list_int = []
+    for string_mot in list_string :
+        if string_mot not in list_char_caractere:
+            if string_mot in dico_de_string:
+                list_int.append(dico_de_string[string_mot])
+            else :
+                print("unrecognise word ")
+                return [-1]
+    return list_int
 
 
 def bool_etat_de_la_phrase(list_int_indice_mot):
