@@ -12,7 +12,8 @@ while (1):
     if ifu.bool_phrase_vide(list_string_saise) == True:
         print("erreur, votre phrase est fausse")
         break
-    if ifu.bool_point_checker(list_string_saise) ==False:
+    print(list_string_saise)
+    if ifu.bool_point_checker(list_string_saise) == False:
         print("erreur veuiller mettre un point pour signifier la fin de votre phrase")
         break
     list_string_saise = ifu.string_final_point_separator(ifu.string_point_seperator(list_string_saise))

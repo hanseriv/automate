@@ -37,10 +37,11 @@ def bool_point_checker(liste_string):
     fonction qui vérifie la présence du caractère '.' dans la liste d'entrée (liste_string) et retourne True si la liste contient ce dit caractère 
     ou false le cas échéant
     """
+    point = '.'
     for string in liste_string :
-        if '.' in string :
+        if point in string :
             return True
-        return False
+    return False
 
 def int_index_word_with_point(list_string):
     """
