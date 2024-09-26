@@ -8,6 +8,7 @@ def liste_phrase_spliter(string_phrase_input):
     """
     fonction qui prend en entrée une string (string_phrase_input)) est qui la retourne en liste de string 
     """
+    string_phrase_input = string_phrase_input.lower()
     liste_string_input = []
     string_mot = ""
     for lettre_char in string_phrase_input:
