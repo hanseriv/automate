@@ -17,6 +17,7 @@ while (1):
         print("erreur veuiller mettre un point pour signifier la fin de votre phrase")
         break
     list_string_saise = ifu.string_final_point_separator(ifu.string_point_seperator(list_string_saise))
+    print(list_string_saise)
     list_int_saise = cf.int_list_nombre_associé(list_string_saise)
     if list_int_saise == [1]:
         print("voter mot ne semble pas exister dans nos registre...")
